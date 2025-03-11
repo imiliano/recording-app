@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicacion para grabar la voz">
+    <meta name="keywords" content="recording,speech recognition,speech,recognition,grabador de voz,voz a texto,reconocimiento de voz">
+    <meta name="author" content="Maximiliano Rubino"/>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="micro.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/spinner.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Title -->
+    <title>Recording App</title>
+</head>
+<body class="bg-dark">
+
+    <header class="text-light text-center text-capitalize my-5">
+        <h3>recording app</h4>
+        <small class="text-primary"> speech recognition api</small>
+    </header>
+    
+<div class="container-xl">
+    <div class="text-center d-flex justify-content-center my-3">
+
+        <div class="col-sm-4 text-dark btn btn-outline-info btn-lg mx-1 fw-bold text-capitalize" id="btn-listen">
+            <img class="my-3 img-fluid" width="50px" src="/micro.png" alt="microphone">
+        </div><!-- micro  -->
+
+    </div><!-- row, a -->
+
+
+    <div class="row text-center d-flex mt-3">
+
+        <div class="col-md-2 text-info fw-bold text-capitalize">
+<p class="mt-2">Your text here: </p>
+        </div><!-- col-md-2 -->
+
+        
+        <div class="col-md-8 text-light mx-1 fw-bold text-capitalize mt-2">
+            <p id="voice-text" class="text-start"></p>
+            <div class="lds-roller hide"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div><!-- col-md-8, #voice-text -->
+
+    </div><!-- row, b -->
+
+</div><!-- container-xl -->
+
+<div class="refresh d-flex justify-content-center"></div>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- App JS -->
+    <script src="/app.js"></script>
+</body>
+</html>
