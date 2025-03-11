@@ -1,2 +1,2 @@
 # recording-app
-speech recognition api
+* aplicación web que utiliza 'speech recognition api' para grabar la voz del usuario, transcribir y renderizarlo en pantalla.
